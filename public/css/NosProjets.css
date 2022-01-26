@@ -1,0 +1,90 @@
+.contenu {
+  max-width: 1000px;
+  margin: 0px auto 20px;
+}
+.contenu h1 {
+  font-size: 40px;
+  text-align: center;
+  background-color: burlywood;
+  text-decoration: uppercase;
+}
+.accueil a {
+  text-decoration: none;
+  color: burlywood;
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 0px;
+  margin-top: 20%;
+}
+.accueil a:active {
+  background: black;
+}
+.description-contenu h3 {
+  font-family: fantasy;
+  margin-left: 10px;
+  font-size: 28px;
+}
+.description-contenu p {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: justify;
+  font-family: oblique, serif;
+}
+.description-contenu img {
+  max-width: 300%;
+}
+.description-contenu .floating-image {
+  max-width: 400px;
+}
+.description-contenu .floating-image.droite {
+  float: right;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+/* EFFET IMAGE  */
+
+.contenu h3 {
+  text-align: left;
+  color: #000;
+  margin-top: 20px;
+}
+.contenu span {
+  text-align: left;
+}
+.contenu h3 {
+  text-align: center;
+  color: #000;
+  margin-top: 0px;
+}
+.contenu p {
+  text-align: center;
+}
+
+.row img {
+  display: block;
+  width: 60%;
+  height: 350px;
+  cursor: pointer;
+  margin-left: 20%;
+}
+#zoom-In figure img {
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+#zoom-In figure:hover img {
+  transform: scale(1.4);
+}
+
+/*   RDC, CRECHE....  */
+
+.contenu1 {
+  width: 90%;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+.contenu1 img {
+  width: 90%;
+  margin-left: 20px;
+}

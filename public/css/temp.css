@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("../img/ABOUDAOU 03.jpg");
+  background-position: center;
+  background-image: 10px;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  height: 80px;
+}
+
+.header__back {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  background-color: #000;
+  color: burlywood;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 50px;
+}
+
+.main__blueprint {
+  width: 800px;
+  height: auto;
+}
+
+.main__blueprint--img {
+  display: block;
+  width: 100%;
+}
+
+.main__info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  width: 85%;
+  position: relative;
+  margin-top: 50px;
+}
+
+.main__info--housed {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.main__info--detailed {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid black;
+  background-color: #fff;
+  width: 75%;
+}
+
+.main__info--detailed > p {
+  padding: 5px;
+  font-size: 25px;
+  color: #221f1f;
+}
+
+.main__info--btn > button {
+  border: 2px solid black;
+  background-color: #fff;
+  font-size: 25px;
+  color: #221f1f;
+  padding: 5px;
+}
+
+.main__info--btn > button:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,728 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vmax;
+  background: white;
+}
+
+/* style page site */
+
+.global {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  padding: 10px;
+  background: white;
+  top: 0px;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid #555;
+  overflow: hidden;
+  z-index: 10;
+  position: fixed;
+  top: 0px;
+  display: block;
+}
+
+header h1 {
+  float: left;
+  margin-left: 15px;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-shadow: 25px 10px 10px #ddd;
+  cursor: pointer;
+}
+
+header h1 span {
+  text-shadow: 25px 10px 10px #ddd;
+  color: burlywood;
+}
+
+#myBtn {
+  border: none;
+}
+
+header ul {
+  float: right;
+  list-style: none;
+}
+
+header ul li {
+  margin-top: 20px;
+  display: inline-block;
+  line-height: 30px;
+}
+
+header ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  padding: 5px 10px;
+  opacity: 0.6;
+}
+
+header ul li a:hover {
+  font-weight: bold;
+  opacity: 1;
+  position: relative;
+  border: 1px solid #042331;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: slide;
+  border-bottom-color: #db8c44;
+}
+
+header ul li a.active {
+  background: burlywood;
+  color: white;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+header .menu {
+  position: absolute;
+  top: 37px;
+  right: 10px;
+  transform: translateY(-50%);
+  background: black;
+  opacity: 0.7;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  display: none;
+}
+
+.global .sousmenu {
+  display: none;
+  position: fixed;
+  animation: 20s;
+}
+
+.global li:hover .sousmenu {
+  display: block;
+  position: fixed;
+  top: 60px;
+  left: 45%;
+  outline-color: #db8c44;
+  background: white;
+}
+
+/* Section */
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 0px;
+}
+
+section .contenu {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.contenu {
+  width: 100%;
+  height: 800px;
+  background: url("/img/ABOUDAOU 01.jpg");
+  background-size: cover;
+  margin: 0px auto;
+  animation: slide 20s infinite;
+}
+
+@keyframes slide {
+  25% {
+    background: url("/img/ABOUDAOU 01.jpg");
+    background-size: cover;
+  }
+  50% {
+    background: url("/img/ABOUDAOU 02.jpg");
+    background-size: cover;
+  }
+  75% {
+    background: url("/img/ABOUDAOU 03.jpg");
+    background-size: cover;
+  }
+  100% {
+    background: url("/img/ABOUDAOU 04.jpg");
+    background-size: cover;
+  }
+}
+
+.contenu .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contenu .text h2 {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-shadow: -1px 3px 0px white;
+  font-size: 3em;
+  color: rgb(15, 15, 15);
+}
+
+.contenu .text input {
+  width: 500px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: #0009;
+  color: white;
+  padding: 0 5px;
+}
+
+.contenu .text button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/*a propos */
+
+#A_propos {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#plus {
+  display: none;
+}
+
+#A_propos h2 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#A_propos .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#A_propos .content .text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 95%;
+  margin-left: 15px;
+}
+
+#A_propos .content .text p {
+  line-height: 1.4;
+  margin: 10px 0;
+}
+
+#A_propos .content .text a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #555;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 3px;
+  box-shadow: 4px 5px 10px #ddd;
+  transition: 0.3s ease-in-out;
+}
+
+#A_propos #monBt {
+  border-radius: 35px;
+  background-color: burlywood;
+  width: 17%;
+  height: 25%;
+  font-size: 120%;
+  border: none;
+}
+
+/* style contact */
+
+#contact {
+  width: 100%;
+  min-height: 200vh;
+}
+
+#contact h2 {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact .content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#contact form {
+  flex: 1;
+  min-width: 300px;
+  padding: 30px 15px;
+}
+
+#contact form input,
+#contact form textarea,
+#contact form button {
+  width: 100%;
+  outline: none;
+  border-bottom: 1px solid rgb(172, 160, 160);
+  border-top: 1px solid rgb(172, 160, 160);
+  border-right: 1px solid rgb(172, 160, 160);
+  border-left: 1px solid rgb(172, 160, 160);
+  margin: 5px 0;
+  resize: none;
+  border-radius: 20px;
+}
+
+#contact form button {
+  background: burlywood;
+  height: 40px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+
+#contact .content {
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+}
+
+#contact .box {
+  width: 100%;
+  flex-wrap: wrap;
+  height: 50%;
+}
+
+#contact .box .text {
+  flex: 1;
+  margin: 15px;
+}
+
+#contact .box .text h3 {
+  color: teal;
+  letter-spacing: 3px;
+  margin-left: 100px;
+}
+/*style galerie*/
+.galerie h3 {
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: bold;
+  font-size: 39px;
+}
+#slider {
+  position: relative;
+  width: 60%;
+  height: 10vw;
+  margin: 20px auto;
+  font-family: "Helvetica Neue", sans-serif;
+  perspective: 1400px;
+  transform-style: preserve-3d;
+}
+
+input[type="radio"] {
+  position: relative;
+  top: 65%;
+  left: 50%;
+  width: 30px;
+  height: 18px;
+  margin: 0 15px 0 0;
+  opacity: 0.4;
+  transform: translateX(-83px);
+  cursor: pointer;
+}
+
+input[type="radio"]:nth-child(5) {
+  margin-right: 0px;
+}
+
+input[type="radio"]:checked {
+  opacity: 1;
+}
+
+#slider label {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  left: 25%;
+  top: 0;
+  color: white;
+  font-size: 0px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 400ms ease;
+}
+
+#slide1 {
+  background: url(/img/ABOUDAOU%2002.jpg);
+  background-size: cover;
+}
+
+#slide2 {
+  background: url(/img/ABOUDAOU%2004.jpg);
+  background-size: cover;
+}
+
+#slide3 {
+  background: url(/img/ABOUDAOU%2003.jpg);
+  background-size: cover;
+}
+
+#slide4 {
+  background: url(/img/ABOUDAOU%2005.jpg);
+  background-size: cover;
+}
+
+#slide5 {
+  background: url(/img/ABOUDAOU%2007.jpg);
+  background-size: cover;
+}
+
+/* Slider Functionality */
+
+/* Active Slide */
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3,
+#s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+  box-shadow: 0 13px 26px burlywood, 0 12px 6px burlywood;
+  transform: translate3d(0%, 0, 0px);
+}
+
+/* Next Slide */
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide4,
+#s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+  box-shadow: 0 6px 10px burlywood, 0 2px 2px burlywood;
+  transform: translate3d(15%, 0, -100px);
+}
+
+/* Next to Next Slide */
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide4,
+#s3:checked ~ #slide5,
+#s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+  box-shadow: 0 1px 4px burlywood;
+  transform: translate3d(30%, 0, -250px);
+}
+
+/* Previous to Previous Slide */
+#s1:checked ~ #slide4,
+#s2:checked ~ #slide5,
+#s3:checked ~ #slide1,
+#s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+  box-shadow: 0 1px 4px burlywood;
+  transform: translate3d(-30%, 0, -250px);
+}
+
+/* Previous Slide */
+#s1:checked ~ #slide5,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2,
+#s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+  box-shadow: 0 6px 10px burlywood, 0 2px 2px burlywood;
+  transform: translate3d(-15%, 0, -100px);
+}
+
+/* MAP */
+
+.map {
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+
+.map h3 {
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: bold;
+  font-size: 39px;
+}
+
+.map p {
+  text-decoration: bold;
+  font-size: 35px;
+  color: rgb(182, 121, 42);
+  margin-left: 35%;
+}
+
+.map p1 {
+  margin-left: 22%;
+}
+
+.map p2 {
+  margin-left: 25%;
+}
+
+/* syle footer */
+
+body footer {
+  position: relative;
+  bottom: 0px;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+  color: burlywood;
+}
+.footer-content h2 {
+  color: beige;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+.socials a:hover i {
+  color: aqua;
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+
+/* style se concter*/
+
+.contenu-concter {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  z-index: 99;
+  clip-path: circle(0 at 50% 50%);
+  transition: 0.5s ease-in-out;
+}
+
+#btn-close {
+  position: fixed;
+  right: 10%;
+  left: 60%;
+  top: 65px;
+  font-size: 2.5em;
+  color: black;
+  cursor: pointer;
+}
+
+.login-box {
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 0 20px;
+  box-shadow: 0 0 20px #000;
+  border-radius: 30px;
+}
+
+.login-box h2 {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.login-box label {
+  display: inline-table;
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  background: rgb(238, 238, 238);
+}
+
+.login-box input {
+  width: 210px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: #eee;
+}
+
+.login-box i {
+  width: 40px;
+  text-align: center;
+}
+
+.login-box .check {
+  background: white;
+  height: 25px;
+  font-size: 12px;
+}
+
+.login-box [type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  transform: translateY(2px);
+}
+
+.login-box button {
+  width: 100%;
+  height: 40px;
+  background: rgb(70, 67, 67);
+  border-radius: 30px;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.login-box p {
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin: 5px 0;
+  color: #555;
+}
+
+.login-box a {
+  text-decoration: none;
+  color: rgb(44, 9, 9);
+  display: inline-block;
+  font-weight: bold;
+}
+
+.login-box .btn {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.login-box .btn-fb {
+  border-radius: 20px;
+  background: rgb(13, 117, 236);
+}
+
+.login-box .btn-gg {
+  border-radius: 20px;
+  background: rgba(223, 55, 55, 0.788);
+}
+
+.login-box .check span {
+  color: rgb(23, 75, 23);
+}
+
+.login-box.show {
+  display: none;
+}
+
+.logo > a {
+  color: inherit;
+}
+
+.top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 9;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: #111;
+  text-align: center;
+  line-height: 33px;
+}
+
+.top a {
+  cursor: pointer;
+  color: white;
+  font-size: 22px;
+}

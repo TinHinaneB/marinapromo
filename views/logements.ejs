@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/Logements.css" />
+    <title>logements</title>
+  </head>
+  <body>
+    <div class="accueil"><a href="/">Accueil</a></div>
+    <div class="forme">
+      <h1>
+        choix des logements
+        <a href="/"></a>
+      </h1>
+    </div>
+    <div class="main">
+      <form method="POST">
+        <h2 class="nom">Bloc</h2>
+        <select class="option" id ="block" name="Bloc">
+          <option disabled="disabled" selected="selected">--Choisir--</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="E">E</option>
+        </select>
+        <h2 class="nom">Etage</h2>
+        <select class="option" id ="floor" name="Etage">
+          <option disabled="disabled" selected="selected">--Choisir--</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="0">RDC</option>
+        </select>
+        <button type="submit">Afficher</button>
+      </form>
+    </div>
+
+  </body>
+</html>

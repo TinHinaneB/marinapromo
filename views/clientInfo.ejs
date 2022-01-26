@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="/css/clientInfo.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Client Info</title>
+  </head>
+
+  <body>
+    <div class="Logements"><a href="/Logements">Précédent</a></div>
+    <div class="client">
+      <div class="title">Informations du client</div>
+      <form class="form" method="POST">
+        <div class="inputfield">
+          <label>Nom </label>
+          <input type="text" class="input" name="nom" />
+        </div>
+        <div class="inputfield">
+          <label> Prénom</label>
+          <input type="text" class="input"  name="prenom" />
+        </div>
+        <div class="inputfield">
+          <label>Adresse mail </label>
+          <input type="text" class="input" name="email" />
+        </div>
+        <div class="inputfield">
+          <label>Mot de passe</label>
+          <input type="password" class="input"  name="password"/>
+        </div>
+        <div class="inputfield">
+          <label> Adresse physique</label>
+          <input type="text" class="input"  name="address" />
+        </div>
+        <div class="inputfield">
+          <label>Genre</label>
+          <div class="custom_select">
+            <select name="gender">
+              <option disabled="disabled" selected="selected">Sélectionner</option>
+              <option value="femme">Femme</option>
+              <option value="homme">Homme</option>
+            </select>
+          </div>
+        </div>
+        <div class="inputfield">
+          <label>Apartement</label>
+          <input class="input" name="apartement" placeholder="Ex: F2 a" />
+        </div>
+        <div class="inputfield">
+          <label>Numéro de téléphone</label>
+          <input type="text" class="input"  name="telephone"/>
+        </div>
+
+        <div class="inputfield">
+          <label>Date de naissance</label>
+          <input type="date" class="input" name="date" />
+        </div>
+        <div class="inputfield">
+          <label>Rendez-vous</label>
+          <input type="date" class="input"  name="meet"/>
+        </div>
+        <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <p>J'accepte les termes d'utilisation</p>
+        </div>
+        <div class="inputfield">
+          <input type="submit" value="Enregister" class="btn" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

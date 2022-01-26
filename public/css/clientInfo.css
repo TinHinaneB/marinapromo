@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  padding: 0 10px;
+  background: url("/img/ABOUDAOU 02.jpg");
+  margin-top: 40px;
+  background-position: center;
+  background-size: cover;
+  font-family: sans-serif;
+}
+.Logements a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 10px;
+  top: 0px;
+}
+.Logements a:active {
+  background: black;
+}
+
+.client {
+  width: 600px;
+  background-color: rgb(0, 0, 0, 0.6);
+  margin: auto;
+  color: #ffffff;
+  padding: 10px 20px 20px 10px;
+  text-align: center;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.client .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: burlywood;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.client .form {
+  width: 100%;
+}
+
+.client .form .inputfield {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.client .form .inputfield label {
+  width: 100px;
+  color: white;
+  margin-right: 14px;
+  margin-left: 10px;
+  font-size: 14px;
+  background: transparent;
+}
+
+.client .form .inputfield .input,
+.client .form .inputfield .textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid burlywood;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.client .form .inputfield .textarea {
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.client .form .inputfield .custom_select {
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.client .form .inputfield .custom_select:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.client .form .inputfield .custom_select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+.client.form .inputfield .input:focus,
+.client .form .inputfield .textarea:focus,
+.client .form .inputfield .custom_select select:focus {
+  border: 1px solid #fec107;
+}
+
+.client .form .inputfield p {
+  font-size: 14px;
+  color: #757575;
+}
+
+.client .form .inputfield .check {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.client .form .inputfield .check input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.client .form .inputfield .check .checkmark {
+  width: 15px;
+  height: 15px;
+  border: 1px solid burlywood;
+  display: block;
+  position: relative;
+}
+
+.client .form .inputfield .check .checkmark:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+
+.client .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark {
+  background: burlywood;
+}
+
+.client .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before {
+  display: block;
+}
+
+.client .form .inputfield .btn {
+  width: 20%;
+  padding: 20px 10px;
+  font-size: 15px;
+  border: 0px;
+  background: burlywood;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+  margin: 10px 200px 10px 270px;
+  margin-left: 40%;
+}
+
+.client .form .inputfield .btn:hover {
+  background: burlywood;
+}
+
+.client .form .inputfield:last-child {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 420px) {
+  .client .form .inputfield {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .client .form .inputfield label {
+    margin-bottom: 5px;
+  }
+  .client .form .inputfield.terms {
+    flex-direction: row;
+  }
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.file {
+  background-color: burlywood;
+  display: block;
+  margin: 5px 150px 5px 150px;
+  text-align: center;
+  border-radius: 12px;
+  border: 2px solid burlywood;
+  padding: 14px 80px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.25px;
+}
+
+button:hover {
+  background-color: burlywood;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--pour scope-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  </head>
+  <body>
+    <div class="accueil"><a href="/">Accueil</a></div>
+    <div class="cont">
+      
+      <form class="form sign-in" action="/login" method="POST">
+        <h2>S'identifier</h2>
+        <label>
+          <input type="email" name="email_1"  placeholder="Email" />
+        </label>
+        <label >
+          <input type="password" name="password_1" 
+           placeholder="mot de passe" />
+        </label>
+        <button class="submit" type="submit">S'identifier</button>
+        <div class="social-media">
+          <ul>
+            <li>
+              <a class="google" href="/auth/google"><i class="fab fa-google"></i></a>
+            </li>
+          </ul>
+        </div>
+      </form>
+
+      
+      <div class="sub-cont">
+        <div class="img">
+          <div class="img-text m-up">
+            <h2>Nouveau ici?</h2>
+            <p>Inscrivez-vous et découvrez un grand nombre de nouvelles opportunités !</p>
+          </div>
+          <div class="img-text m-in">
+            <h2>Un de nous?</h2>
+            <p>Si vous avez déjà un compte, connectez-vous. Vous nous avez manqué !</p>
+          </div>
+          <div class="img-btn">
+            <span class="m-up">S'inscrire</span>
+            <span class="m-in">S'identifier</span>
+          </div>
+        </div>
+        
+        
+        <form class="form sign-up" action="/register" id="signup" method="POST">
+          <h2>S'inscrire</h2>
+          <label >
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" name="name"required placeholder="Nom d'utilisateur" />
+          </label>
+          <label >
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <input type="email" name="email" required placeholder="Adresse Mail" />
+          </label>
+          <label>
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <input type="password" name="password"  required placeholder="Mot de passe" />
+          </label>
+          <label>
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <input type="password" name="passwordConfirmed" required placeholder="Confirmez votre mot de passe" />
+          </label>
+          <button type="submit" class="submit">S'inscrire maintenant</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      document.querySelector(".img-btn").addEventListener("click", function () {
+        document.querySelector(".cont").classList.toggle("s-signup");
+      });
+    </script>
+  </body>
+</html>

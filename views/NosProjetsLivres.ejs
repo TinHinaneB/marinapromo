@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nos projets livrés</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/NosProjetsLivres.css" />
+  </head>
+  <body>
+    <div class="accueil"><a href="/">Accueil</a></div>
+    <div class="contenu">
+      <div class="description-contenu">
+        <h1>RÉSIDENCE MARINA</h1>
+        <br />
+        <br />
+        <img
+          src="img/ZAIDI 010-min.jpg"
+          alt=""
+          class="img-responsive floating-image droite"
+        />
+        <br />
+        <section>
+          <h3>Le site de la résidence Marina:</h3>
+          <p>
+            La résidence Marina se situe à Sidi Ali Lebhar Béjaia. <br />
+            Un site agréable proche de la plage, ainsi que de différentes
+            infrastructure médicales et administratives. <br />
+            <br />
+            <br />
+          </p>
+
+          <p>
+            <img
+              src="img/ZAIDI 004-min.jpg"
+              alt=""
+              class="img-responsive floating-image gauche"
+            />
+          </p>
+
+          <h3>Caractéristiques de la résidence:</h3>
+          <p>
+            Une promotion moderne composée de logements de type F2, F3, et F5 en
+            duplexe. <br />
+            Conforme aux exigences actuelles telles que: <br />
+            - Ascenceurs modernes. <br />
+            - Cuisines semi équipées. <br />
+            - Paraboles collectives. <br />
+            - Bache à eau. <br />
+          </p>
+          <br />
+          <br />
+          <img
+            src="img/ZAIDI 011-min.jpg"
+            alt=""
+            class="img-responsive floating-image droite"
+          />
+          <h3>Egalement:</h3>
+
+          <p>
+            - Revêtements contemporains (Sols et murs). <br />
+            - Pré-installation des chaudières . <br />
+            &nbsp;En plus elle est proche de toutes les comodités. <br />
+            - Administrations publiques (Mairie, Poste Algérie télécom). <br />
+            - Ecole (Primaire, moyens et secondaires). <br />
+            - Aéroport Abane Ramdane. <br />
+            - Plages et centre ville à 10 minutes. <br />
+          </p>
+
+          <br />
+          <br />
+          <br />
+          <!--        3D VS réelles -->
+
+          <div class="contenu">
+            <h1>IMAGE 3D vs REELLE</h1>
+            <div id="image-comparison-slider">
+              <img src="img/3D.jpg" alt="Avant" />
+              <div class="img-wrapper">
+                <img src="img/r%C3%A9elle.JPG" alt="Après" />
+              </div>
+              <span class="label label-Avant">3D</span>
+              <span class="label label-Après">réelle</span>
+              <div class="handle">
+                <div class="handle-line"></div>
+                <div class="handle-circle">
+                  <i class="fas fa-chevron-left"></i>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="handle-line"></div>
+              </div>
+            </div>
+          </div>
+
+          <!--     plus d'img -->
+          <br />
+          <br />
+          <h1>PLUS D'IMAGES</h1>
+          <div class="slider">
+            <img id="img1" src="img/1.jpg" alt="" />
+            <img id="img2" src="img/2.jpg" alt="" />
+            <img id="img3" src="img/3.jpg" alt="" />
+            <img id="img4" src="img/4.jpg" alt="" />
+            <img id="img5" src="img/5.JPG" alt="" />
+            <img id="img6" src="img/6.JPG" alt="" />
+            <img id="img7" src="img/7.JPG" alt="" />
+            <img id="img8" src="img/8.JPG" alt="" />
+          </div>
+
+          <div class="thumb">
+            <a href="#img1"><img src="img/1.jpg" alt="" /></a>
+            <a href="#img2"><img src="img/2.jpg" alt="" /></a>
+            <a href="#img3"><img src="img/3.jpg" alt="" /></a>
+            <a href="#img4"><img src="img/4.jpg" alt="" /></a>
+            <a href="#img5"><img src="img/5.JPG" alt="" /></a>
+            <a href="#img6"><img src="img/6.JPG" alt="" /></a>
+            <a href="#img7"><img src="img/7.JPG" alt="" /></a>
+            <a href="#img8"><img src="img/8.JPG" alt="" /></a>
+          </div>
+          <br />
+          <br />
+          <br />
+          <!--    finnnnnnnnnnnnnn gallery-->
+
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+            integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+          ></script>
+          <script>
+            VanillaTilt.init(
+              document.querySelector("#image-comparison-slider"),
+              {
+                max: 5, // rotation en degrées( deg)
+                speed: 800, //(millisecondes (ms))
+                scale: 1.02,
+              }
+            );
+
+            const slider = document.querySelector("#image-comparison-slider");
+            const sliderImgWrapper = document.querySelector(
+              "#image-comparison-slider .img-wrapper"
+            );
+            const sliderHandle = document.querySelector(
+              "#image-comparison-slider .handle"
+            );
+
+            slider.addEventListener("mousemove", sliderMouseMove);
+            slider.addEventListener("touchmove", sliderMouseMove);
+
+            function sliderMouseMove(event) {
+              if (isSliderLocked) return;
+
+              const sliderLeftX = slider.offsetLeft;
+              const sliderWidth = slider.clientWidth;
+              const sliderHandleWidth = sliderHandle.clientWidth;
+
+              let mouseX =
+                (event.clientX || event.touches[0].clientX) - sliderLeftX;
+              if (mouseX < 0) mouseX = 0;
+              else if (mouseX > sliderWidth) mouseX = sliderWidth;
+
+              sliderImgWrapper.style.width = `${(
+                (1 - mouseX / sliderWidth) *
+                100
+              ).toFixed(4)}%`;
+              sliderHandle.style.left = `calc(${(
+                (mouseX / sliderWidth) *
+                100
+              ).toFixed(4)}% - ${sliderHandleWidth / 2}px)`;
+            }
+
+            let isSliderLocked = false;
+
+            slider.addEventListener("mousedown", sliderMouseDown);
+            slider.addEventListener("touchstart", sliderMouseDown);
+            slider.addEventListener("mouseup", sliderMouseUp);
+            slider.addEventListener("touchend", sliderMouseUp);
+            slider.addEventListener("mouseleave", sliderMouseLeave);
+
+            function sliderMouseDown(event) {
+              if (isSliderLocked) isSliderLocked = false;
+              sliderMouseMove(event);
+            }
+
+            function sliderMouseUp() {
+              if (!isSliderLocked) isSliderLocked = true;
+            }
+
+            function sliderMouseLeave() {
+              if (isSliderLocked) isSliderLocked = false;
+            }
+          </script>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

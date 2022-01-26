@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("/img/ABOUDAOU 03.jpg");
+  margin-top: 30px;
+  background-position: center;
+  background-image: 10px;
+  font-family: sans-serif;
+}
+.accueil a {
+  text-decoration: none;
+  color: burlywood;
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 10px;
+  top: 0px;
+}
+.accueil a:active {
+  background: black;
+}
+
+.forme {
+  width: 800px;
+  background-color: rgb(0, 0, 0, 0.6);
+  margin: auto;
+  color: #ffffff;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.main {
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 800px;
+  margin: auto;
+}
+
+.mainNew {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 50px;
+}
+
+.mainNew__blueprint {
+  width: 800px;
+  height: 750px;
+}
+
+.mainNew__blueprint--img {
+  display: block;
+  width: 100%;
+}
+
+.mainNew__info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  width: 75%;
+  position: relative;
+  margin-top: 50px;
+}
+
+.mainNew__info--detailed {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid black;
+  background-color: #fff;
+  width: 75%;
+}
+
+.mainNew__info--detailed > div {
+  padding: 5px;
+  font-size: 25px;
+  color: #221f1f;
+}
+
+.mainNew__info--btn {
+  border: 2px solid black;
+  background-color: #fff;
+  font-size: 25px;
+  color: #221f1f;
+  padding: 5px;
+}
+
+form {
+  padding: 10px;
+}
+
+#nom {
+  width: 100%;
+  height: 100px;
+}
+
+.nom {
+  margin-left: 25px;
+  margin-top: 30px;
+  width: 125px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.option {
+  position: relative;
+  left: 200px;
+  top: -37px;
+  line-height: 40px;
+  width: 532px;
+  height: 40px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 16px;
+  color: #555;
+  outline: none;
+  overflow: hidden;
+}
+
+.option option {
+  font-size: 20px;
+}
+
+button {
+  background-color: burlywood;
+  display: block;
+  margin: 60px 20px 20px 300px;
+  text-align: center;
+  border-radius: 12px;
+  border: 2px solid burlywood;
+  padding: 14px 80px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.25px;
+}
+
+button:hover {
+  background-color: #000000;
+}

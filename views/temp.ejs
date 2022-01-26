@@ -1,0 +1,33 @@
+<%- include("partials/headerEmpty"); -%>
+<link rel="stylesheet" href="/css/temp.css" />
+    <title>blueprints</title>
+</head>
+<body>
+   <header class="header">
+       <div class="header__back"><a href="/logements">Recent</a></div>
+   </header>
+   <main class="main">
+       <section class="main__blueprint">
+           <% if (block && floor) { %>
+            <img class="main__blueprint--img" src="/img/blocks/<%=block + floor%>.jpg" alt="">
+           <% } %>
+       </section>
+       <form class="main__info" method="POST">
+           <% infoArray.map(({type, surface, prix})=> { %>
+            <div class="main__info--housed">
+              <div class="main__info--detailed">
+               <p class="main__info--floor"><%=type%></p>
+               <p class="main__info--surface">Surface:<%=surface%></p>
+               <p class="main__info--price">Price: <%=prix%></p>
+             </div>
+             
+            </div>
+            <% }) %>
+            <div class="main__info--btn">
+                 <button type="submit" > Submit </button>
+            </div>
+       </form>
+   </main>
+   <footer></footer>
+</body>
+</html>
